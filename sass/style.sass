@@ -1,0 +1,146 @@
+@use 'mixins'
+@use 'variables'
+
+*
+    font-family: 'Josefin Sans', sans-serif
+    margin:0
+    padding: 0
+    box-sizing: border-box
+    background-color: variables.$bg-color
+    text-decoration: none
+
+body
+  background-color: variables.$bg-color
+  color: variables.$text-color
+
+  a
+    color: variables.$text-color
+    text-decoration: none
+    transition: .4s
+
+    &:hover
+      color: variables.$secondary-color
+
+  ul
+    list-style: none
+
+.header
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+  @include mixins.container
+
+  .logo
+    color: variables.$primary-color
+    font-size: 3.4rem
+
+  .navbar
+
+    ul
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      width:100%
+      @include mixins.container
+
+      li
+        margin: 0 1rem
+        text-transform: uppercase
+        font-size: .9rem
+
+  .socialMedia
+
+    ul
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      gap:25px
+      width:100%
+      @include mixins.container
+
+.cards
+    @include mixins.flex-center
+    flex-wrap: wrap
+    justify-content: center
+    gap:20px 25px
+    padding: 0
+    background-color: none
+
+.cardContainer
+    @include mixins.flex-center
+    flex-direction: column
+    font-size: 2.5rem    
+    width: 31%
+    height: 400px
+    margin-bottom: 4%
+    color: variables.$primary-color
+
+    .pictureLabels
+        background-color: transparent
+        padding-bottom: 10px
+
+.btn
+    color: variables.$primary-color
+    border: 2px solid variables.$primary-color
+    text-transform: uppercase
+    font-size: 1rem
+    padding: 10px 40px
+    cursor: pointer
+    letter-spacing: 1px
+    background-color: transparent
+
+    &:hover
+        background-color: variables.$primary-color
+        color: variables.$bg-color
+
+.card1
+    @include mixins.bg-img('animais.jpg')
+
+.card2
+    @include mixins.bg-img('arquitetura.jpg')
+
+.card3
+    @include mixins.bg-img('cidade.jpg')
+
+.card4
+    @include mixins.bg-img('decoracao.jpg')
+
+.card5
+    @include mixins.bg-img('esportes.jpg')
+
+.card6
+    @include mixins.bg-img('paisagem.jpg')
+
+.card7
+    @include mixins.bg-img('pessoas.jpg')
+
+.card8
+    @include mixins.bg-img('refeicoes.jpg')
+
+footer
+    text-align: center
+    margin:20px 0px
+    color: variables.$secondary-color
+
+@include mixins.mobile-790
+    .header
+        display: flex
+        flex-direction: column
+        align-items: center
+        flex-wrap: wrap
+
+    .cards
+        width:100%
+        align-items: center
+
+    .cardContainer
+        width:80%
+        height: 350px
+
+@include mixins.mobile-450
+    .navbar
+
+        ul
+            justify-content: center
+            gap:15px

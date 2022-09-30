@@ -1,0 +1,247 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
+  text-decoration: none;
+}
+
+body {
+  background-color: #000;
+  color: #777;
+}
+body a {
+  color: #777;
+  text-decoration: none;
+  transition: 0.4s;
+}
+body a:hover {
+  color: #20C997;
+}
+body ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+.header .logo {
+  color: #FFF;
+  font-size: 3.4rem;
+}
+.header .navbar ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+.header .navbar ul li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.header .socialMedia ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 100%;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 25px;
+  padding: 0;
+  background-color: none;
+}
+
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2.5rem;
+  width: 31%;
+  height: 400px;
+  margin-bottom: 4%;
+  color: #FFF;
+}
+.cardContainer .pictureLabels {
+  background-color: transparent;
+  padding-bottom: 10px;
+}
+
+.btn {
+  color: #FFF;
+  border: 2px solid #FFF;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 10px 40px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  background-color: transparent;
+}
+.btn:hover {
+  background-color: #FFF;
+  color: #000;
+}
+
+.card1 {
+  background-image: url("../img/animais.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.card1:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/animais.jpg");
+}
+
+.card2 {
+  background-image: url("../img/arquitetura.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.card2:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/arquitetura.jpg");
+}
+
+.card3 {
+  background-image: url("../img/cidade.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.card3:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cidade.jpg");
+}
+
+.card4 {
+  background-image: url("../img/decoracao.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.card4:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/decoracao.jpg");
+}
+
+.card5 {
+  background-image: url("../img/esportes.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.card5:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/esportes.jpg");
+}
+
+.card6 {
+  background-image: url("../img/paisagem.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.card6:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/paisagem.jpg");
+}
+
+.card7 {
+  background-image: url("../img/pessoas.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.card7:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pessoas.jpg");
+}
+
+.card8 {
+  background-image: url("../img/refeicoes.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.card8:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/refeicoes.jpg");
+}
+
+footer {
+  text-align: center;
+  margin: 20px 0px;
+  color: #20C997;
+}
+
+@media (max-width: 790px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .cards {
+    width: 100%;
+    align-items: center;
+  }
+  .cardContainer {
+    width: 80%;
+    height: 350px;
+  }
+}
+@media (max-width: 450px) {
+  .navbar ul {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
